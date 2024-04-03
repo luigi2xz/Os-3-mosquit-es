@@ -6,3 +6,8 @@ body{
 span{
     color: green;
 }
+
+.Contagem{
+    background-color: white;
+    padding: 20px 0;
+}
