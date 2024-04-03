@@ -18,3 +18,9 @@ span{
     padding: 15px;
     font-size: 15px;
 }
+
+.ativo{
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid rgb(221, 225, 245)
+}
