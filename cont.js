@@ -15,3 +15,5 @@ botoes[i].onclick = function(){
 
 // botoes[i].classList.remove('ativo');
 }
+
+const contadores = document.querySelectorAll('.contador');
