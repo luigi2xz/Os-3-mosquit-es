@@ -17,12 +17,14 @@ botoes[i].onclick = function(){
 }
 
 const contadores = document.querySelectorAll('.contador');
-const tempoObjetivo1 = new Date ('2025-01-17T00:00:00')
-const tempoObjetivo2 = new Date ('2025-01-17T00:00:00')
-const tempoObjetivo3 = new Date ('2025-01-17T00:00:00')
-const tempoObjetivo4 = new Date ('2025-01-17T00:00:00')
+const tempoObjetivo1 = new Date ('2025-01-17T00:00:00');
+const tempoObjetivo2 = new Date ('2025-01-18T00:00:00');
+const tempoObjetivo3 = new Date ('2025-03-12T00:00:00');
+const tempoObjetivo4 = new Date ('2025-01-19T00:00:00');
+const tempoObjetivo5 = new Date ('2024-12-13T00:00:00');
 
-let tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3,tempoObjetivo4]
+
+let tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4, tempoObjetivo5];
 for(let i =0; i< contadores.length; i++){
     contadores[i].textContent = CalculaTempo(tempos[i]);
 }
