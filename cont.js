@@ -18,9 +18,18 @@ botoes[i].onclick = function(){
 
 const contadores = document.querySelectorAll('.contador');
 const tempoObjetivo1 = new Date ('2025-01-17T00:00:00')
+const tempoObjetivo2 = new Date ('2025-01-17T00:00:00')
+const tempoObjetivo3 = new Date ('2025-01-17T00:00:00')
+const tempoObjetivo4 = new Date ('2025-01-17T00:00:00')
 
+let tempos = [tempoObjetivo1, tempoObjetivo2, tempoOjetivo3,tempoObjetivo4]
+for(let i =0; i< contadores.length; i++){
+    contadores[i].textContent = CalculaTempo(tempos[i]);
+}
+
+function CalculaTTempo(tempoObjetivo){
 let TempoAtual = new Date ();
-let TempoFinal = tempoObjetivo1 - TempoAtual;
+let TempoFinal = tempoObjetivo - TempoAtual;
 let segundos = Math.floor( TempoFinal/1000);
 let minutos = Math.floor (segundos/60);
 let horas = Math.floor(minutos/60);
@@ -30,4 +39,5 @@ segundos %= 60;
 minutos %= 60;
 horas %= 24;
 
-contadores[0].textContent = dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos"
+return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos"
+}
