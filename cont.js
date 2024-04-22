@@ -23,7 +23,7 @@ let TempoAtual = new Date ();
 let TempoFinal = tempoObjetivo1 - TempoAtual;
 let segundos = Math.floor( TempoFinal/1000);
 let minutos = Math.floor (segundos/60);
-let horas = math.floor(minutos/60);
+let horas = Math.floor(minutos/60);
 let dias = Math.floor(horas/24);
 
 segundos%=60;
